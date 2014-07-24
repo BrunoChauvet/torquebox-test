@@ -1,0 +1,24 @@
+---
+# This is the TorqueBox configuration file. Refer to the TorqueBox
+# documentation at http://torquebox.org/documentation/current/ 
+# for all configuration options.
+web:
+  context: "/"
+
+jobs:
+  order_inventory:
+    job: OrderInventory
+    cron: "*/10 * * * * ?"
+
+queues:
+  /queue/deliver_order:
+    durable: false
+
+services:
+  order_delivery:
+    service: OrderDelivery
+    config:
+      queue_name: "/queue/deliver_order"
+
+messaging:
+  /queue/deliver_order: OrderProcessor
