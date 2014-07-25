@@ -18,7 +18,9 @@ This will fire up a JBossAS instance running on port 8080. You can verify the lo
 `JRUBY_PATH/jruby-1.7.13@global/gems/torquebox-server-3.1.1-java/jboss/standalone/log/server.log`
 You should then be able to access [http://localhost:8080/orders](http://localhost:8080/orders)
 
+----------------------------------------------------------------
 ![alt text](http://i60.tinypic.com/15p252s.png "TorqueBox Test")
+----------------------------------------------------------------
 
 ### What is does
 
