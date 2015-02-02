@@ -22,7 +22,7 @@ You should then be able to access [http://localhost:8080/orders](http://localhos
 ![alt text](http://i60.tinypic.com/15p252s.png "TorqueBox Test")
 ----------------------------------------------------------------
 
-### What is does
+### What it does
 
 1. A new Order is created from the UI
 2. A background job starts packing the order
